@@ -152,6 +152,7 @@ const filter = () =>  {
   }
 
   printSneakers(filtered);
+  hideText();
 
 
 
@@ -175,6 +176,7 @@ const filter = () =>  {
     printSneakers(random);
     showText();
   }
+
 }
 
 const fillBrands = (products) => {
@@ -205,6 +207,7 @@ const createSelectBrand = () => {
     }
 
     divFilters .appendChild(selectModel);
+
     selectModel.addEventListener("change", (event) => {
       BRAND = event.target.value;
       filter();
@@ -252,6 +255,7 @@ const createSelectColor = () => {
       COLOR = event.target.value;
       filter();
     })
+
 }
 
 createSelectColor();
